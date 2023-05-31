@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+#E0E0E0
+*/
+
+
+:root {
+	--background1: rgba(255, 255, 255, 1); 
+	--background2: #F0F2F2;
+	--background2op20: rgba(223, 227, 229, 0.2);
+	--background3: #DFE3E5;
+	--gradient: linear-gradient(180deg, rgba(223, 227, 229, 0.2) 0%, rgba(223, 227, 229, 0) 100%);
+	--text90: rgba(0, 0, 0, 0.9);
+	--text60: rgba(0, 0, 0, 0.6);
+	--text30: rgba(0, 0, 0, 0.3);		
+}
+
+body {background: #fff;}
+
+.header, 
+.scroll-up .header, 
+.scroll-down .header, 
+.scroll-up .topheader + .header, 
+.scroll-down .topheader + .header {background: rgba(255, 255, 255, 0.8);}
+
+.gradient {background: linear-gradient(180deg, rgba(223, 227, 229, 0.2) 0%, rgba(223, 227, 229, 0) 400px);}
+
+.logo ul li ul li a img {filter: brightness(0) saturate(100%) invert(0%) sepia(13%) saturate(463%) hue-rotate(330deg) brightness(90%) contrast(84%); /*https://codepen.io/sosuke/pen/Pjoqqp*/ }
+
+.stats {width: 485px; /*padding: 8px 5px 8px 0;*/ }
+
+.stat {background: #fff; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);}
+
+.banner {background: white; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);}
+
+.starting_box {background: var(--gradient); }
+
+.starting,
+.collection_feature,
+.nfts_sidebar input[type=submit], 
+input[type=submit].submit,
+.button.active, 
+.button:hover {color: rgba(255, 255, 255, 0.9);}
+
+a.readmore {box-shadow: -20px 0 20px #fff; background: rgba(255, 255, 255, 1);}
+
+.stats_full {width: 100%; background: white; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);}
+
+.stats_full .stat {background: transparent !important; box-shadow: none;}
+
+.nft_item,
+.buy_box {background: white; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); border-right: 1px solid rgba(0, 0, 0, 0.05); }
+
+.item_stat:first-child img {filter: brightness(0) saturate(100%); }
+
+select,
+.div_toggler {background-image: url(../img/caret-down-solid-b.svg);}
+
+.div_toggler.open {background-image: url(../img/caret-up-solid-b.svg);}
+
+[data-accordion] {box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; }
+
+.accordion button,
+[data-accordion] [data-content] {background: transparent;}
+
+.table_wrap td a.tab_collection:hover {color: black;}
+
+.toggle:before {background: var(--background3);}
+
+.item_stat:first-child {background: var(--background2);}
+
+.logo ul li ul {/*background: var(--background2);*/ background: white; }
+
+.autocomplete-suggestions {border: 1px solid rgba(0, 0, 0, 0.3);}
+
+.autocomplete-suggestions strong {color: var(--text90); }
+
+/* datepicker overrides */
+
+.ui-widget-content {background: #fff;}
+
+.ui-state-default:hover, 
+.ui-widget-content .ui-state-default:hover, 
+.ui-state-default.ui-state-highlight {
+    background: #f5f5f5;
+}
+
+
+.ui-widget-content:after {
+	background: linear-gradient(180deg, rgba(223, 227, 229, 0.2) 0%, rgba(223, 227, 229, 0) 100%);
+}
+/* /datepicker overrides */
+
+
+/**/
